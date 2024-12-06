@@ -3,6 +3,7 @@
 service openvswitch-switch start
 ovs-vsctl set-manager ptcp:6640
 pip2 install pandas minicps
+pip2 install --force-reinstall -v cpppo==4.3.0
 
 if [ $# -gt 0 ]
 then
