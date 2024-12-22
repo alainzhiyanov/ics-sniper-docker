@@ -33,7 +33,7 @@ RUN git config --global http.sslVerify false && \
     util/install.sh -a
 
 # Install Python packages
-RUN pip3 install pymodbus==2.4.0 serial pyserial-asyncio
+RUN pip3 install pymodbus pandas serial pyserial-asyncio
 
 EXPOSE 6633 6653 6640
 
